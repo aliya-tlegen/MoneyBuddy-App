@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D2A670B290F01BF0039FBB3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2A670A290F01BF0039FBB3 /* Colors.swift */; };
+		4DB1E72F290EFE4D0068199A /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1E72E290EFE4D0068199A /* Strings.swift */; };
 		CE35302828434EFC003C8D98 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35302728434EFC003C8D98 /* ShopViewController.swift */; };
 		CE35302A284360A2003C8D98 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE353029284360A2003C8D98 /* WelcomeViewController.swift */; };
 		CE35302C28438088003C8D98 /* WelcomeSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35302B28438088003C8D98 /* WelcomeSecondViewController.swift */; };
@@ -23,9 +25,15 @@
 		CEF78A26284116C4005906F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF78A25284116C4005906F9 /* ViewController.swift */; };
 		CEF78A2B284116C7005906F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEF78A2A284116C7005906F9 /* Assets.xcassets */; };
 		CEF78A2E284116C7005906F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEF78A2C284116C7005906F9 /* LaunchScreen.storyboard */; };
+		EC7622E9219AD3C1D3CE44FF /* Pods_MoneyBuddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A307AF96C578F3C26D5BFA5 /* Pods_MoneyBuddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A307AF96C578F3C26D5BFA5 /* Pods_MoneyBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFBFA05FD5EF34B57C84C29 /* Pods-MoneyBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBuddy.debug.xcconfig"; path = "Target Support Files/Pods-MoneyBuddy/Pods-MoneyBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		4D2A670A290F01BF0039FBB3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		4DB1E72E290EFE4D0068199A /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		A2FF57B6F6C19C3DA7139EC4 /* Pods-MoneyBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyBuddy.release.xcconfig"; path = "Target Support Files/Pods-MoneyBuddy/Pods-MoneyBuddy.release.xcconfig"; sourceTree = "<group>"; };
 		CE35302728434EFC003C8D98 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		CE353029284360A2003C8D98 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		CE35302B28438088003C8D98 /* WelcomeSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeSecondViewController.swift; sourceTree = "<group>"; };
@@ -51,17 +59,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC7622E9219AD3C1D3CE44FF /* Pods_MoneyBuddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D2A670E290F0AA90039FBB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE6E8CBD284252BC005B9FDC /* CustomTabBarView.swift */,
+				CE6E8CBF28426A3E005B9FDC /* GoalTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4DB1E72D290EFC100068199A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE353029284360A2003C8D98 /* WelcomeViewController.swift */,
+				CE35302B28438088003C8D98 /* WelcomeSecondViewController.swift */,
+				CEF78A25284116C4005906F9 /* ViewController.swift */,
+				CE6E8CB7284224C6005B9FDC /* HomeViewController.swift */,
+				CE35302728434EFC003C8D98 /* ShopViewController.swift */,
+				CE35302F28438EB5003C8D98 /* ReportViewController.swift */,
+				CE35302D28438766003C8D98 /* SingedInViewController.swift */,
+				CE6E8CB9284240E2005B9FDC /* GoalViewController.swift */,
+				CE6E8CC12842BD55005B9FDC /* NewTargetViewController.swift */,
+				CE6E8CBB28424385005B9FDC /* ProfileViewController.swift */,
+				CE6E8CB528421262005B9FDC /* RegistrationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CEF78A15284116C4005906F9 = {
 			isa = PBXGroup;
 			children = (
 				CEF78A20284116C4005906F9 /* MoneyBuddy */,
 				CEF78A1F284116C4005906F9 /* Products */,
+				EF95203BF888D840F4623CB7 /* Pods */,
+				DF1EC51ADC0733CA8F88F9E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,24 +115,32 @@
 			isa = PBXGroup;
 			children = (
 				CEF78A21284116C4005906F9 /* AppDelegate.swift */,
-				CEF78A25284116C4005906F9 /* ViewController.swift */,
-				CE353029284360A2003C8D98 /* WelcomeViewController.swift */,
-				CE6E8CB7284224C6005B9FDC /* HomeViewController.swift */,
-				CE6E8CBD284252BC005B9FDC /* CustomTabBarView.swift */,
-				CE35302728434EFC003C8D98 /* ShopViewController.swift */,
-				CE6E8CBF28426A3E005B9FDC /* GoalTableViewCell.swift */,
-				CE35302F28438EB5003C8D98 /* ReportViewController.swift */,
-				CE35302D28438766003C8D98 /* SingedInViewController.swift */,
-				CE6E8CB9284240E2005B9FDC /* GoalViewController.swift */,
-				CE6E8CC12842BD55005B9FDC /* NewTargetViewController.swift */,
-				CE6E8CBB28424385005B9FDC /* ProfileViewController.swift */,
-				CE35302B28438088003C8D98 /* WelcomeSecondViewController.swift */,
-				CE6E8CB528421262005B9FDC /* RegistrationViewController.swift */,
+				4D2A670A290F01BF0039FBB3 /* Colors.swift */,
+				4DB1E72E290EFE4D0068199A /* Strings.swift */,
+				4D2A670E290F0AA90039FBB3 /* View */,
+				4DB1E72D290EFC100068199A /* Controller */,
 				CEF78A2A284116C7005906F9 /* Assets.xcassets */,
 				CEF78A2C284116C7005906F9 /* LaunchScreen.storyboard */,
 				CEF78A2F284116C7005906F9 /* Info.plist */,
 			);
 			path = MoneyBuddy;
+			sourceTree = "<group>";
+		};
+		DF1EC51ADC0733CA8F88F9E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A307AF96C578F3C26D5BFA5 /* Pods_MoneyBuddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF95203BF888D840F4623CB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EFBFA05FD5EF34B57C84C29 /* Pods-MoneyBuddy.debug.xcconfig */,
+				A2FF57B6F6C19C3DA7139EC4 /* Pods-MoneyBuddy.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEF78A32284116C7005906F9 /* Build configuration list for PBXNativeTarget "MoneyBuddy" */;
 			buildPhases = (
+				9D751EA185DD5A627990A4C9 /* [CP] Check Pods Manifest.lock */,
 				CEF78A1A284116C4005906F9 /* Sources */,
 				CEF78A1B284116C4005906F9 /* Frameworks */,
 				CEF78A1C284116C4005906F9 /* Resources */,
+				EE33C972F1F4EB3AD6FBB6E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +210,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D751EA185DD5A627990A4C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyBuddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE33C972F1F4EB3AD6FBB6E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyBuddy/Pods-MoneyBuddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoneyBuddy/Pods-MoneyBuddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoneyBuddy/Pods-MoneyBuddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEF78A1A284116C4005906F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -174,7 +264,9 @@
 				CE35302828434EFC003C8D98 /* ShopViewController.swift in Sources */,
 				CE6E8CC22842BD55005B9FDC /* NewTargetViewController.swift in Sources */,
 				CE35303028438EB5003C8D98 /* ReportViewController.swift in Sources */,
+				4DB1E72F290EFE4D0068199A /* Strings.swift in Sources */,
 				CE6E8CBC28424385005B9FDC /* ProfileViewController.swift in Sources */,
+				4D2A670B290F01BF0039FBB3 /* Colors.swift in Sources */,
 				CE6E8CB628421262005B9FDC /* RegistrationViewController.swift in Sources */,
 				CE6E8CBA284240E3005B9FDC /* GoalViewController.swift in Sources */,
 				CEF78A26284116C4005906F9 /* ViewController.swift in Sources */,
@@ -316,6 +408,7 @@
 		};
 		CEF78A33284116C7005906F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EFBFA05FD5EF34B57C84C29 /* Pods-MoneyBuddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -340,12 +433,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CEF78A34284116C7005906F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2FF57B6F6C19C3DA7139EC4 /* Pods-MoneyBuddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,7 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
